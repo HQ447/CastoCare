@@ -1,5 +1,6 @@
 import "./App.css";
 import Nav from "./Components/Nav/Nav";
+import Home from "./Pages/Home/Home";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         alt=""
       /> */}
       <Nav />
-      <div className="main-sec h-screen"></div>
+      <Home />
     </>
   );
 }
