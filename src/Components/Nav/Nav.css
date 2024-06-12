@@ -1,0 +1,12 @@
+.Navbar {
+  background-color: #f9fafd;
+}
+.main-title {
+  background: linear-gradient(50deg, #fb3c00, #ffb800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.theme-color {
+  color: #ffb30e;
+}
