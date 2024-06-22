@@ -1,5 +1,15 @@
-.Home {
+.front-sec {
   background-color: #ffb30e;
+}
+.red {
+  background-color: red !important;
+}
+.sec-3-bg {
+  background-color: #fff6f1 !important;
+}
+.sec-3-heading {
+  color: #f17228;
+  font-size: 2.5rem !important;
 }
 
 .lg-heading {
