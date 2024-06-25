@@ -2,6 +2,9 @@ import { IoMail } from "react-icons/io5";
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { NavLink } from "react-router-dom";
+import { FaLinkedin } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -10,33 +13,33 @@ function Footer() {
       style={{ backgroundColor: "#212121" }}
     >
       <div className="container mx-auto">
-        <h5 className="leading-loose font-bold text-white">OUR TOP CITIES</h5>
+        <h5 className="leading-loose font-bold text-white">OUR TOP PLACES</h5>
         <div className="flex justify-between flex-wrap">
           <div className="col-6 col-md-4 col-lg-auto mb-3">
             <ul className="list-none mb-4 lg:mb-0">
               <li className="leading-loose">
                 <a className="text-gray-400 no-underline" href="#!">
-                  San Francisco
+                  KDA Sector-I
                 </a>
               </li>
               <li className="leading-loose">
                 <a className="text-gray-400 no-underline" href="#!">
-                  Miami
+                  KDA Sector-II
                 </a>
               </li>
               <li className="leading-loose">
                 <a className="text-gray-400 no-underline" href="#!">
-                  San Diego
+                  KDA Sector III
                 </a>
               </li>
               <li className="leading-loose">
                 <a className="text-gray-400 no-underline" href="#!">
-                  East Bay
+                  Kohat Cantt
                 </a>
               </li>
               <li className="leading-loose">
                 <a className="text-gray-400 no-underline" href="#!">
-                  Long Beach
+                  OTS
                 </a>
               </li>
             </ul>
@@ -45,22 +48,22 @@ function Footer() {
             <ul className="list-none mb-4 lg:mb-0">
               <li className="leading-loose">
                 <a className="text-gray-400 no-underline" href="#!">
-                  Los Angeles
+                  Main City
                 </a>
               </li>
               <li className="leading-loose">
                 <a className="text-gray-400 no-underline" href="#!">
-                  Washington DC
+                  Chikkar Kot
                 </a>
               </li>
               <li className="leading-loose">
                 <a className="text-gray-400 no-underline" href="#!">
-                  Seattle
+                  College Town
                 </a>
               </li>
               <li className="leading-loose">
                 <a className="text-gray-400 no-underline" href="#!">
-                  Portland
+                  Bahadar kot
                 </a>
               </li>
               <li className="leading-loose">
@@ -164,12 +167,14 @@ function Footer() {
             <h5 className="leading-loose font-bold text-white ">COMPANY</h5>
             <ul className="list-none mb-4 lg:mb-0">
               <li className="leading-loose">
-                <a
-                  className="text-gray-400 no-underline hover:text-white hover:font-bold hover:cursor-pointer"
-                  href="#!"
-                >
-                  About Us
-                </a>
+                <NavLink to={"/about"}>
+                  <a
+                    className="text-gray-400 no-underline hover:text-white hover:font-bold hover:cursor-pointer"
+                    href="#!"
+                  >
+                    About Us
+                  </a>
+                </NavLink>
               </li>
               <li className="leading-loose">
                 <a className="text-gray-400 no-underline" href="#!">
@@ -270,9 +275,36 @@ function Footer() {
             className="flex  text-2xl gap-3 mt-3 mb-7"
             style={{ color: "#bdbdbd" }}
           >
-            <FaInstagram className=" hover:text-white hover:cursor-pointer" />
-            <FaXTwitter className=" hover:text-white hover:cursor-pointer" />
-            <FaFacebook className=" hover:text-white hover:cursor-pointer" />
+            <a
+              href="https://www.instagram.com/custocares?igsh=MnVnaWZ3ODhmcGpp"
+              target="_blank"
+            >
+              <FaInstagram className=" hover:text-white hover:cursor-pointer" />
+            </a>
+            <a
+              href="https://x.com/custocare180692?t=RV1by54FuHxyIiIoPYmc0g&s=09"
+              target="_blank"
+            >
+              <FaXTwitter className=" hover:text-white hover:cursor-pointer" />
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61559239227557&mibextid=ZbWKwL"
+              target="_blank"
+            >
+              <FaFacebook className=" hover:text-white hover:cursor-pointer" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/custocare-services-407865307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://youtube.com/@custocareservices?si=QtCtcv8sQmK0oTK3"
+              target="_blank"
+            >
+              <FaYoutube />
+            </a>
           </div>
           <h5
             className=" font-bold text-3xl text-white"
@@ -332,7 +364,7 @@ function Footer() {
                 target="_blank"
               >
                 {" "}
-                CastoCare-web Developers
+                CastoCare-Team
               </a>
             </p>
           </div>

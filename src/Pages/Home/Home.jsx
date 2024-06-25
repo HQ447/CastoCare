@@ -2,38 +2,43 @@ import "./Home.css";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdDeliveryDining } from "react-icons/md";
 import { FaBagShopping } from "react-icons/fa6";
+import { useSelector } from "react-redux";
+import main from "../../assets/main.png";
 
 function Home() {
+  const restArr = useSelector((state) => state.store.restArr);
   return (
     <div className="Home ">
-      <div className="front-sec h-screen px-20 flex flex-wrap-reverse  -sm:px-10 -xsm:px-3">
-        <div className="flex flex-col left w-7/12 justify-center h-full ">
-          <h1 className="lg-heading text-white">Are You Starving?</h1>
-          <p className="md-heading text-gray-600 ">
+      <div className="front-sec pt-20 h-screen -md:h-auto -md:pt-24 -md:pb-10 -md:gap-4 px-20 flex flex-wrap-reverse w-full -sm:px-10 -xsm:px-3">
+        <div className="flex flex-col left w-full md:w-1/2 justify-center h-full">
+          <h1 className="lg-heading text-white -md:text-center">
+            Are You Starving?
+          </h1>
+          <p className="md-heading text-gray-600 -md:text-center ">
             Within a few clicks, find meals <br /> that are accessible near you
           </p>
-          <div className=" bg-white rounded-md p-4 my-3">
+          <div className="bg-white rounded-md p-4 my-3">
             <div className="btn-box flex py-3">
               <button className="DeliveryBtn flex gap-1 items-center text-gray-400 py-2 px-3 rounded-md hover:bg-orange-300">
                 <MdDeliveryDining className="text-3xl" />
                 <span>Delivery</span>
               </button>
-              <button className="pickupBtn gap-1 items-center text-gray-400 flex  py-2 px-3 rounded-md hover:bg-orange-300">
+              <button className="pickupBtn gap-1 items-center text-gray-400 flex py-2 px-3 rounded-md hover:bg-orange-300">
                 <FaBagShopping className="text-xl" />
-                <span> Pickup</span>
+                <span>Pickup</span>
               </button>
             </div>
-            <div className="flex  items-center gap-4  ">
-              <div className="flex items-center input-box rounded-md gap-3 p-3 w-full">
+            <div className="flex items-center gap-4 w-full ">
+              <div className="flex items-center input-box rounded-md gap-3 p-3 w-3/4 -mmd:w-7/12 -md:w-3/5">
                 <FaLocationDot style={{ color: "#F17228" }} />
                 <input
                   type="text"
                   placeholder="Enter Your Address"
-                  className=" bg-transparent outline-none "
+                  className="bg-transparent outline-none"
                 />
               </div>
               <button
-                className=" text-white font-bold p-3 rounded-md w-40"
+                className="text-white font-bold p-3 rounded-md w-1/3 -mmd:w-2/5  -md:w-1/3"
                 style={{ backgroundColor: "#F17228" }}
               >
                 Find Food
@@ -41,7 +46,15 @@ function Home() {
             </div>
           </div>
         </div>
+        <div className="right w-full md:w-1/2 flex justify-center items-center">
+          <img
+            src={main}
+            alt="loading error"
+            className="w-full bg-transparent m-img"
+          />
+        </div>
       </div>
+
       <section className="py-0 px-20 my-20  -sm:px-10 -xsm:px-3">
         <div className="container mx-auto">
           <div className="flex flex-wrap -mx-2 mt-7">
@@ -49,7 +62,7 @@ function Home() {
               <div className="card h-full">
                 <div className="relative">
                   <img
-                    className="rounded-3 w-full rounded-3xl"
+                    className="rounded-3 w-full rounded-3xl "
                     src="https://themewagon.github.io/foodwagon/v1.0.0/assets/img/gallery/discount-item-1.png"
                     alt="..."
                   />
@@ -259,114 +272,49 @@ function Home() {
           </div>
         </div>
         <div className="container mx-auto  flex gap-2 flex-wrap justify-between">
-          <div className="col-sm-6 col-md-4 col-lg-3 h-full mb-5 w-60  -mmd:w-80">
-            <div className="card h-full text-white rounded-3 relative overflow-hidden">
-              <img
-                className="img-fluid rounded-3 h-full w-full object-cover  rounded-xl"
-                src="https://themewagon.github.io/foodwagon/v1.0.0/assets/img/gallery/food-world.png"
-                alt="..."
-              />
-              <div className="absolute inset-0 ps-0"></div>
-              <div className="card-body ps-0">
-                <div className="flex items-center mb-3">
-                  <img
-                    className="img-fluid"
-                    src="assets/img/gallery/food-world-logo.png"
-                    alt=""
-                  />
-                  <div className="flex-1 ms-3">
-                    <h5 className="mb-0 font-bold text-gray-900">Food world</h5>
+          {restArr.map((obj) => (
+            <div
+              key={obj.index}
+              className="col-sm-6 col-md-4 col-lg-3 h-full mb-5 w-60 shadow-md p-2 rounded-lg -mmd:w-80"
+            >
+              <div className="card h-full text-white rounded-3 relative overflow-hidden">
+                <img
+                  className="img-fluid rounded-3 h-full w-full object-cover  rounded-xl"
+                  src={obj.image}
+                  alt="..."
+                />
+                <div className="absolute inset-0 ps-0"></div>
+                <div className="card-body ps-0">
+                  <div className="flex items-center mb-3">
+                    <img
+                      className="img-fluid"
+                      src="assets/img/gallery/food-world-logo.png"
+                      alt=""
+                    />
+                    <div className="flex my-3">
+                      <div className="logo">
+                        <img src={obj.logo} alt="logo" className=" w-16" />
+                      </div>
+                      <div className=" flex flex-col justify-center ms-4">
+                        <h5 className="mb-0 font-bold text-gray-900 text-xl ">
+                          {obj.ResturentName}
+                        </h5>
+                        <p className="text-black ">{obj.rating}</p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <span className="badge bg-red-200 p-2">
-                  <span className="font-bold text-lg text-red-600">
-                    Opens Tomorrow
+                  <span
+                    className="badge bg-green-100 px-2 py-1 rounded-md"
+                    style={{ backgroundColor: "#ffb30ed4" }}
+                  >
+                    <span className="font-bold text-lg  p-0 text-white">
+                      Opens Tomorrow
+                    </span>
                   </span>
-                </span>
+                </div>
               </div>
             </div>
-          </div>
-          <div className=" h-full mb-5 w-60">
-            <div className="card h-full text-white rounded-3 relative overflow-hidden">
-              <img
-                className="img-fluid rounded-3 h-full w-full object-cover rounded-xl"
-                src="https://themewagon.github.io/foodwagon/v1.0.0/assets/img/gallery/food-world.png"
-                alt="..."
-              />
-              <div className="absolute inset-0 ps-0"></div>
-              <div className="card-body ps-0">
-                <div className="flex items-center mb-3">
-                  <img
-                    className="img-fluid"
-                    src="assets/img/gallery/food-world-logo.png"
-                    alt=""
-                  />
-                  <div className="flex-1 ms-3">
-                    <h5 className="mb-0 font-bold text-gray-900">Food world</h5>
-                  </div>
-                </div>
-                <span className="badge bg-red-200 p-2">
-                  <span className="font-bold text-lg text-red-600">
-                    Opens Tomorrow
-                  </span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6 col-md-4 col-lg-3 h-full mb-5 w-60 -mmd:w-80">
-            <div className="card h-full text-white rounded-3 relative overflow-hidden">
-              <img
-                className="img-fluid rounded-3 h-full w-full object-cover  rounded-xl"
-                src="https://themewagon.github.io/foodwagon/v1.0.0/assets/img/gallery/food-world.png"
-                alt="..."
-              />
-              <div className="absolute inset-0 ps-0"></div>
-              <div className="card-body ps-0">
-                <div className="flex items-center mb-3">
-                  <img
-                    className="img-fluid"
-                    src="assets/img/gallery/food-world-logo.png"
-                    alt=""
-                  />
-                  <div className="flex-1 ms-3">
-                    <h5 className="mb-0 font-bold text-gray-900">Food world</h5>
-                  </div>
-                </div>
-                <span className="badge bg-red-200 p-2">
-                  <span className="font-bold text-lg text-red-600">
-                    Opens Tomorrow
-                  </span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6 col-md-4 col-lg-3 h-full mb-5 w-60 -mmd:w-80">
-            <div className="card h-full text-white rounded-3 relative overflow-hidden">
-              <img
-                className="img-fluid rounded-3 h-full w-full object-cover  rounded-xl"
-                src="https://themewagon.github.io/foodwagon/v1.0.0/assets/img/gallery/food-world.png"
-                alt="..."
-              />
-              <div className="absolute inset-0 ps-0"></div>
-              <div className="card-body ps-0">
-                <div className="flex items-center mb-3">
-                  <img
-                    className="img-fluid"
-                    src="assets/img/gallery/food-world-logo.png"
-                    alt=""
-                  />
-                  <div className="flex-1 ms-3">
-                    <h5 className="mb-0 font-bold text-gray-900">Food world</h5>
-                  </div>
-                </div>
-                <span className="badge bg-red-200 p-2">
-                  <span className="font-bold text-lg text-red-600">
-                    Opens Tomorrow
-                  </span>
-                </span>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
       <section className="pb-5 pt-8 px-20 -sm:px-10 -xsm:px-3">

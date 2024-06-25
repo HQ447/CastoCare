@@ -11,7 +11,10 @@
   color: #f17228;
   font-size: 2.5rem !important;
 }
-
+.m-img {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
 .lg-heading {
   font-size: 3rem;
   font-weight: 800;
