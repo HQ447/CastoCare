@@ -177,9 +177,14 @@ function Footer() {
                 </NavLink>
               </li>
               <li className="leading-loose">
-                <a className="text-gray-400 no-underline" href="#!">
-                  Team
-                </a>
+                <NavLink to={"/team"}>
+                  <a
+                    className="text-gray-400 no-underline hover:text-white hover:font-bold hover:cursor-pointer"
+                    href="#!"
+                  >
+                    Our Team
+                  </a>
+                </NavLink>
               </li>
               <li className="leading-loose">
                 <a className="text-gray-400 no-underline" href="#!">

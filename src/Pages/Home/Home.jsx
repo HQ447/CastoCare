@@ -62,8 +62,8 @@ function Home() {
               <div className="card h-full">
                 <div className="relative">
                   <img
-                    className="rounded-3 w-full rounded-3xl "
-                    src="https://themewagon.github.io/foodwagon/v1.0.0/assets/img/gallery/discount-item-1.png"
+                    className="rounded-3 w-full rounded-3xl h-52 "
+                    src="https://i.tribune.com.pk/media/images/WhatsApp-Image-2022-04-09-at-3-15-22-PM1649499342-0/WhatsApp-Image-2022-04-09-at-3-15-22-PM1649499342-0.jpeg"
                     alt="..."
                   />
                   <div
@@ -72,7 +72,7 @@ function Home() {
                   >
                     <div className="bg-primary p-4 rounded-tr-3xl ">
                       <div className="flex justify-between items-center">
-                        <div className="text-white text-4xl">10%</div>
+                        <div className="text-white text-4xl">25%</div>
                         <div className="text-white text-sm">
                           <div className="font-normal text-sm mt-2"> Off</div>
                         </div>
@@ -81,8 +81,8 @@ function Home() {
                   </div>
                 </div>
                 <div className="px-0">
-                  <h5 className="font-bold text-gray-900 truncate">
-                    Flat Hill Slingback
+                  <h5 className="font-bold text-gray-900 truncate text-xl mt-1">
+                    Full Beef Karahi
                   </h5>
                   <span className="bg-red-100 py-1 px-3 inline-block rounded-xl mt-2">
                     <span className="text-red-500 text-lg font-bold">
@@ -97,14 +97,14 @@ function Home() {
               <div className="card h-full">
                 <div className="relative">
                   <img
-                    className="rounded-3 w-full rounded-3xl"
-                    src="https://themewagon.github.io/foodwagon/v1.0.0/assets/img/gallery/discount-item-1.png"
+                    className="rounded-3 w-full rounded-3xl h-52 "
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxxUNGrCbT0SCIlnn5VZknc-HCxy0WWG1wIA&s"
                     alt="..."
                   />
                   <div className="absolute bottom-0 left-0 rounded-tr-3xl front-sec">
                     <div className="bg-primary p-4 rounded-tr-3xl ">
                       <div className="flex justify-between items-center">
-                        <div className="text-white text-4xl">10%</div>
+                        <div className="text-white text-4xl">30%</div>
                         <div className="text-white text-sm">
                           <div className="font-normal text-sm mt-2"> Off</div>
                         </div>
@@ -113,8 +113,8 @@ function Home() {
                   </div>
                 </div>
                 <div className="px-0">
-                  <h5 className="font-bold text-gray-900 truncate">
-                    Ocean Blue Ring
+                  <h5 className="font-bold text-gray-900 truncate text-xl mt-1">
+                    Combo Pack
                   </h5>
                   <span className="bg-red-100 py-1 px-3 inline-block rounded-xl mt-2">
                     <span className="text-red-500 font-bold text-lg">
@@ -129,14 +129,14 @@ function Home() {
               <div className="card h-full">
                 <div className="relative  ">
                   <img
-                    className=" w-full rounded-3xl"
-                    src="https://themewagon.github.io/foodwagon/v1.0.0/assets/img/gallery/discount-item-1.png"
+                    className=" w-full rounded-3xl h-52 "
+                    src="https://www.bdtask.com/blog/assets/plugins/ckfinder/core/connector/php/uploads/images/keep-an-attractive-and-creative-name-of-your-food-combo.jpg"
                     alt="..."
                   />
                   <div className="absolute bottom-0 left-0 rounded-tr-3xl front-sec">
                     <div className="bg-primary p-4 rounded-tr-3xl ">
                       <div className="flex justify-between items-center">
-                        <div className="text-white text-4xl">10%</div>
+                        <div className="text-white text-4xl">40%</div>
                         <div className="text-white text-sm">
                           <div className="font-normal text-sm mt-2"> Off</div>
                         </div>
@@ -145,8 +145,8 @@ function Home() {
                   </div>
                 </div>
                 <div className="px-0">
-                  <h5 className="font-bold text-gray-900 truncate">
-                    Brown Leathered Wallet
+                  <h5 className="font-bold text-gray-900 truncate text-xl mt-1">
+                    Fast Deals
                   </h5>
                   <span className="bg-red-100 py-1 px-3 inline-block rounded-xl mt-2">
                     <span className="text-red-500 font-bold text-lg">
@@ -161,14 +161,14 @@ function Home() {
               <div className="card h-full">
                 <div className="relative">
                   <img
-                    className="rounded-3 w-full rounded-3xl"
-                    src="https://themewagon.github.io/foodwagon/v1.0.0/assets/img/gallery/discount-item-1.png"
+                    className="rounded-3 w-full rounded-3xl h-52 "
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDB-jJq0cw2bigYwIHiz4w2Y7jFK5rs-NLSg&s"
                     alt="..."
                   />
                   <div className="absolute bottom-0 left-0 rounded-tr-3xl front-sec">
                     <div className="bg-primary p-4 rounded-tr-3xl ">
                       <div className="flex justify-between items-center">
-                        <div className="text-white text-4xl">10%</div>
+                        <div className="text-white text-4xl">50%</div>
                         <div className="text-white text-sm">
                           <div className="font-normal text-sm mt-2"> Off</div>
                         </div>
@@ -177,8 +177,8 @@ function Home() {
                   </div>
                 </div>
                 <div className="px-0">
-                  <h5 className="font-bold text-gray-900 truncate">
-                    Silverside Wristwatch
+                  <h5 className="font-bold text-gray-900 truncate text-xl mt-1">
+                    Summer Deals
                   </h5>
                   <span className="bg-red-100 py-1 px-3 inline-block rounded-xl mt-2">
                     <span className="text-red-500 font-bold text-lg">
@@ -279,21 +279,25 @@ function Home() {
             >
               <div className="card h-full text-white rounded-3 relative overflow-hidden">
                 <img
-                  className="img-fluid rounded-3 h-full w-full object-cover  rounded-xl"
+                  className="img-fluid rounded-3  w-full object-cover h-48 rounded-xl"
                   src={obj.image}
                   alt="..."
                 />
                 <div className="absolute inset-0 ps-0"></div>
                 <div className="card-body ps-0">
-                  <div className="flex items-center mb-3">
+                  <div className="flex items-center ">
                     <img
                       className="img-fluid"
                       src="assets/img/gallery/food-world-logo.png"
                       alt=""
                     />
                     <div className="flex my-3">
-                      <div className="logo">
-                        <img src={obj.logo} alt="logo" className=" w-16" />
+                      <div className="logo rounded-full">
+                        <img
+                          src={obj.logo}
+                          alt="logo"
+                          className="rounded-full w-16"
+                        />
                       </div>
                       <div className=" flex flex-col justify-center ms-4">
                         <h5 className="mb-0 font-bold text-gray-900 text-xl ">
