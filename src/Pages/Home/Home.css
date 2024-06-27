@@ -4,6 +4,23 @@
 .red {
   background-color: red !important;
 }
+
+.image-slider {
+  width: 60%;
+  height: 600px;
+  background-image: url("../../assets/bike.jpg");
+  background-size: 100% 100%;
+  animation: changeImage 6s linear infinite;
+}
+@keyframes changeImage {
+  0% {
+    background-image: url("../../assets/bike.jpg");
+  }
+  100% {
+    background-image: url("../../assets/main.jpg");
+  }
+}
+
 .sec-3-bg {
   background-color: #fffbf4 !important;
 }

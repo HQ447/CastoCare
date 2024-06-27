@@ -61,19 +61,22 @@ const initialState = {
   ],
   ourTeam: [
     {
-      name: "Muhammad Talha",
-      des: "loekr efjk iw sfijw fijws mfuwirkf viofjes bkj dvk",
-      title: "Founder",
-    },
-    {
-      name: "Obaid Afridi",
-      des: "loekr efjk iw sfijw fijws mfuwirkf viofjes bkj dvk",
-      title: "Co-Founder",
-    },
-    {
       name: "Hammad Ahmad",
       des: "loekr efjk iw sfijw fijws mfuwirkf viofjes bkj dvk",
       title: "Web Developer",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOH2aZnIHWjMQj2lQUOWIL2f4Hljgab0ecZQ&s",
+    },
+    {
+      name: "Member 2",
+      des: "loekr efjk iw sfijw fijws mfuwirkf viofjes bkj dvk",
+      title: "Graphic Designer",
+      img: "https://static.vecteezy.com/system/resources/previews/007/793/728/original/silhouette-drawing-of-muslim-woman-with-hijab-arab-woman-for-logo-template-icon-hijab-store-muslim-store-etc-free-vector.jpg",
+    },
+    {
+      name: "Member 3",
+      des: "loekr efjk iw sfijw fijws mfuwirkf viofjes bkj dvk",
+      title: "Social Media Manager",
+      img: "https://static.vecteezy.com/system/resources/previews/007/793/728/original/silhouette-drawing-of-muslim-woman-with-hijab-arab-woman-for-logo-template-icon-hijab-store-muslim-store-etc-free-vector.jpg",
     },
   ],
   searchData: {},

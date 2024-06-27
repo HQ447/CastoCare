@@ -3,10 +3,17 @@ import { FaLocationDot } from "react-icons/fa6";
 import { MdDeliveryDining } from "react-icons/md";
 import { FaBagShopping } from "react-icons/fa6";
 import { useSelector } from "react-redux";
-import main from "../../assets/main.png";
+
+// import { useState } from "react";
 
 function Home() {
   const restArr = useSelector((state) => state.store.restArr);
+  // const [slider, setslider] = useState(false);
+
+  // setInterval(() => {
+  //   setslider((prev) => !prev);
+  // }, 4000);
+
   return (
     <div className="Home ">
       <div className="front-sec pt-20 h-screen -md:h-auto -md:pt-24 -md:pb-10 -md:gap-4 px-20 flex flex-wrap-reverse w-full -sm:px-10 -xsm:px-3">
@@ -46,12 +53,12 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="right w-full md:w-1/2 flex justify-center items-center">
-          <img
-            src={main}
+        <div className=" image-slider right w-full md:w-1/2 flex justify-center items-center">
+          {/* <img
+            src={slider === true ? bike : main}
             alt="loading error"
-            className="w-full bg-transparent m-img"
-          />
+            className=" bg-transparent m-img w-80"
+          /> */}
         </div>
       </div>
 
