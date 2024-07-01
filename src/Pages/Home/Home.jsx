@@ -3,32 +3,29 @@ import { FaLocationDot } from "react-icons/fa6";
 import { MdDeliveryDining } from "react-icons/md";
 import { FaBagShopping } from "react-icons/fa6";
 import { useSelector } from "react-redux";
-
+import { FaStar } from "react-icons/fa";
 import ReactWhatsapp from "react-whatsapp";
-// import { useState } from "react";
+import main from "../../assets/main.png";
 
 function Home() {
   const restArr = useSelector((state) => state.store.restArr);
-  // const [slider, setslider] = useState(false);
-
-  // setInterval(() => {
-  //   setslider((prev) => !prev);
-  // }, 4000);
 
   return (
     <div className="Home ">
-      <ReactWhatsapp number="+92 3498841513" message="How can I help you?">
+      <ReactWhatsapp number="+92 3336575249" message="How can I help you?">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"
           alt=""
-          className=" w-16 fixed bottom-10 right-5 z-50"
+          className=" w-16 fixed bottom-10 right-5 z-50 hover:rotate-45 hover:scale-105 transition-all"
         />
       </ReactWhatsapp>
       <div className="front-sec pt-20 h-screen -md:h-auto -md:pt-24 -md:pb-10 -md:gap-4 px-20 flex flex-wrap-reverse w-full -sm:px-10 -xsm:px-3">
-        <div className="flex flex-col left w-full md:w-1/2 justify-center h-full">
-          <h1 className="lg-heading text-white -md:text-center">
-            Are You Starving?
-          </h1>
+        <div className="flex flex-col left w-full md:w-1/2 justify-center h-full overflow-hidden ">
+          <div className=" w-full  h-20 ">
+            <h1 className="lg-heading text-white -md:text-center head-1">
+              Are You Starving?
+            </h1>
+          </div>
           <p className="md-heading text-gray-600 -md:text-center ">
             Within a few clicks, find meals <br /> that are accessible near you
           </p>
@@ -62,11 +59,7 @@ function Home() {
           </div>
         </div>
         <div className=" image-slider right w-full md:w-1/2 flex justify-center items-center">
-          {/* <img
-            src={slider === true ? bike : main}
-            alt="loading error"
-            className=" bg-transparent m-img w-80"
-          /> */}
+          <img src={main} alt="img" className="main-img" />
         </div>
       </div>
 
@@ -292,7 +285,7 @@ function Home() {
               key={obj.index}
               className="col-sm-6 col-md-4 col-lg-3 h-full mb-5 w-60 shadow-md p-2 rounded-lg -mmd:w-80"
             >
-              <div className="card h-full text-white rounded-3 relative overflow-hidden">
+              <div className="card text-white rounded-3 relative overflow-hidden ">
                 <img
                   className="img-fluid rounded-3  w-full object-cover h-48 rounded-xl"
                   src={obj.image}
@@ -318,7 +311,13 @@ function Home() {
                         <h5 className="mb-0 font-bold text-gray-900 text-xl ">
                           {obj.ResturentName}
                         </h5>
-                        <p className="text-black ">{obj.rating}</p>
+                        <span className="flex items-center gap-1">
+                          <FaStar className=" text-yellow-400 " />
+                          <FaStar className=" text-yellow-400 " />
+                          <FaStar className=" text-yellow-400 " />
+                          <FaStar className=" text-yellow-400 " />
+                          <p className="text-black ">{obj.rating}</p>
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -346,7 +345,7 @@ function Home() {
                     <div className="order-0 md:order-1 w-full md:w-5/12 xl:w-7/12 2xl:w-8/12 g-0">
                       <img
                         className="img-fluid w-full h-full object-cover rounded-t md:rounded-r md:rounded-t-none"
-                        src="https://themewagon.github.io/foodwagon/v1.0.0/assets/img/gallery/crispy-sandwiches.png"
+                        src="https://just-eat-prod-sg-res.cloudinary.com/image/upload/c_fill,f_auto,q_auto,w_1200,h_630,d_au:cuisines:indian-4.jpg/v1/au/restaurants/11022284.jpg"
                         alt="..."
                       />
                     </div>
@@ -357,130 +356,13 @@ function Home() {
                           style={{ color: "#FFB30E" }}
                           className="text-primary text-4xl font-bold"
                         >
-                          Crispy Sandwiches
+                          Royal Biryani Feast
                         </span>
                       </h1>
                       <p className="text-lg">
-                        Enjoy the large size of sandwiches. Complete your meal
-                        with the perfect slice of sandwiches.
-                      </p>
-                      <div
-                        className="grid py-2 text-center rounded-md text-white font-bold mt-11"
-                        style={{ backgroundColor: "#FFB30E" }}
-                      >
-                        <a className="btn btn-lg btn-primary mt-xl-6" href="#!">
-                          PROCEED TO ORDER
-                          <svg
-                            className="w-4 h-4 ml-2 inline-block"
-                            aria-hidden="true"
-                            focusable="false"
-                            data-prefix="fas"
-                            data-icon="chevron-right"
-                            role="img"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 320 512"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
-                            ></path>
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="pb-5 pt-8 px-20 -sm:px-10 -xsm:px-3">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-wrap">
-            <div className="w-full">
-              <div className="card mb-3 shadow-lg">
-                <div className="card-body py-0">
-                  <div className="flex flex-wrap justify-center">
-                    <div className="order-0 md:order-0 w-full md:w-5/12 xl:w-7/12 2xl:w-8/12 g-0">
-                      <img
-                        className="img-fluid w-full h-full object-cover rounded-t md:rounded-l md:rounded-t-none"
-                        src="https://themewagon.github.io/foodwagon/v1.0.0/assets/img/gallery/crispy-sandwiches.png"
-                        alt="..."
-                      />
-                    </div>
-                    <div className="w-full md:w-7/12 xl:w-5/12 2xl:w-4/12 p-10">
-                      <h1 className="card-title mt-xl-5 mb-4 text-4xl font-bold">
-                        Best deals <br />
-                        <span
-                          style={{ color: "#FFB30E" }}
-                          className="text-primary text-4xl font-bold"
-                        >
-                          Crispy Sandwiches
-                        </span>
-                      </h1>
-                      <p className="text-lg">
-                        Enjoy the large size of sandwiches. Complete your meal
-                        with the perfect slice of sandwiches.
-                      </p>
-                      <div
-                        className="grid py-2 text-center rounded-md text-white font-bold mt-11"
-                        style={{ backgroundColor: "#FFB30E" }}
-                      >
-                        <a className="btn btn-lg btn-primary mt-xl-6" href="#!">
-                          PROCEED TO ORDER
-                          <svg
-                            className="w-4 h-4 ml-2 inline-block"
-                            aria-hidden="true"
-                            focusable="false"
-                            data-prefix="fas"
-                            data-icon="chevron-right"
-                            role="img"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 320 512"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
-                            ></path>
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="pb-5 pt-8 px-20 -sm:px-10 -xsm:px-3">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-wrap">
-            <div className="w-full">
-              <div className="card mb-3 shadow-lg">
-                <div className="card-body py-0">
-                  <div className="flex flex-wrap justify-center">
-                    <div className="order-0 md:order-1 w-full md:w-5/12 xl:w-7/12 2xl:w-8/12 g-0">
-                      <img
-                        className="img-fluid w-full h-full object-cover rounded-t md:rounded-r md:rounded-t-none"
-                        src="https://themewagon.github.io/foodwagon/v1.0.0/assets/img/gallery/crispy-sandwiches.png"
-                        alt="..."
-                      />
-                    </div>
-                    <div className="w-full md:w-7/12 xl:w-5/12 2xl:w-4/12  p-10">
-                      <h1 className="card-title mt-xl-5 mb-4 text-4xl font-bold">
-                        Best deals <br />
-                        <span
-                          style={{ color: "#FFB30E" }}
-                          className="text-primary text-4xl font-bold"
-                        >
-                          Crispy Sandwiches
-                        </span>
-                      </h1>
-                      <p className="text-lg">
-                        Enjoy the large size of sandwiches. Complete your meal
-                        with the perfect slice of sandwiches.
+                        Savor the rich and aromatic flavors of our Royal
+                        Biryani, crafted with premium basmati rice and tender
+                        meat.
                       </p>
                       <div
                         className="grid py-2 text-center rounded-md text-white font-bold mt-11"
@@ -514,6 +396,126 @@ function Home() {
         </div>
       </section>
 
+      <section className="pb-5 pt-8 px-20 -sm:px-10 -xsm:px-3">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap">
+            <div className="w-full">
+              <div className="card mb-3 shadow-lg">
+                <div className="card-body py-0">
+                  <div className="flex flex-wrap justify-center">
+                    <div className="order-0 md:order-0 w-full md:w-5/12 xl:w-7/12 2xl:w-8/12 g-0">
+                      <img
+                        className="img-fluid w-full h-full object-cover rounded-t md:rounded-l md:rounded-t-none"
+                        src="https://assets.epicurious.com/photos/5c4b7ab537d8ef4605419f1d/16:9/w_5840,h_3285,c_limit/St.-Patrick's-Day-Breakfast-Hash-012319.jpg"
+                        alt="..."
+                      />
+                    </div>
+                    <div className="w-full md:w-7/12 xl:w-5/12 2xl:w-4/12 p-10">
+                      <h1 className="card-title mt-xl-5 mb-4 text-4xl font-bold">
+                        Best deals <br />
+                        <span
+                          style={{ color: "#FFB30E" }}
+                          className="text-primary text-4xl font-bold"
+                        >
+                          Breakfast Bonanza
+                        </span>
+                      </h1>
+                      <p className="text-lg">
+                        Start your day right with our breakfast bonanza. A
+                        perfect mix of breakfast essentials to kickstart your
+                        morning.
+                      </p>
+                      <div
+                        className="grid py-2 text-center rounded-md text-white font-bold mt-11"
+                        style={{ backgroundColor: "#FFB30E" }}
+                      >
+                        <a className="btn btn-lg btn-primary mt-xl-6" href="#!">
+                          PROCEED TO ORDER
+                          <svg
+                            className="w-4 h-4 ml-2 inline-block"
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fas"
+                            data-icon="chevron-right"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                            ></path>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="pb-5 pt-8 px-20 -sm:px-10 -xsm:px-3">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap">
+            <div className="w-full">
+              <div className="card mb-3 shadow-lg">
+                <div className="card-body py-0">
+                  <div className="flex flex-wrap justify-center">
+                    <div className="order-0 md:order-1 w-full md:w-5/12 xl:w-7/12 2xl:w-8/12 g-0">
+                      <img
+                        className="img-fluid w-full h-full object-cover rounded-t md:rounded-r md:rounded-t-none"
+                        src="https://themewagon.github.io/foodwagon/v1.0.0/assets/img/gallery/crispy-sandwiches.png"
+                        alt="..."
+                      />
+                    </div>
+                    <div className="w-full md:w-7/12 xl:w-5/12 2xl:w-4/12  p-10">
+                      <h1 className="card-title mt-xl-5 mb-4 text-4xl font-bold">
+                        Best deals <br />
+                        <span
+                          style={{ color: "#FFB30E" }}
+                          className="text-primary text-4xl font-bold"
+                        >
+                          Gourmet Burgers
+                        </span>
+                      </h1>
+                      <p className="text-lg">
+                        Savor the flavors of our gourmet burgers. Made with
+                        premium ingredients, these burgers are a delight in
+                        every bite.
+                      </p>
+                      <div
+                        className="grid py-2 text-center rounded-md text-white font-bold mt-11"
+                        style={{ backgroundColor: "#FFB30E" }}
+                      >
+                        <a className="btn btn-lg btn-primary mt-xl-6" href="#!">
+                          PROCEED TO ORDER
+                          <svg
+                            className="w-4 h-4 ml-2 inline-block"
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fas"
+                            data-icon="chevron-right"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                            ></path>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="py-20 relative px-20 -sm:px-10 -xsm:px-3">
         <div
           className="absolute inset-0 bg-center bg-cover"

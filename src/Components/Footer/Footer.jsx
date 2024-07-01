@@ -32,16 +32,6 @@ function Footer() {
                   KDA Sector III
                 </a>
               </li>
-              <li className="leading-loose">
-                <a className="text-gray-400 no-underline" href="#!">
-                  Kohat Cantt
-                </a>
-              </li>
-              <li className="leading-loose">
-                <a className="text-gray-400 no-underline" href="#!">
-                  OTS
-                </a>
-              </li>
             </ul>
           </div>
           <div className="col-6 col-md-4 col-lg-auto mb-3">
@@ -58,17 +48,26 @@ function Footer() {
               </li>
               <li className="leading-loose">
                 <a className="text-gray-400 no-underline" href="#!">
-                  College Town
-                </a>
-              </li>
-              <li className="leading-loose">
-                <a className="text-gray-400 no-underline" href="#!">
                   Bahadar kot
                 </a>
               </li>
+            </ul>
+          </div>
+          <div className="col-6 col-md-4 col-lg-auto mb-3">
+            <ul className="list-none mb-4 lg:mb-0">
               <li className="leading-loose">
                 <a className="text-gray-400 no-underline" href="#!">
-                  Nashville
+                  Kohat Cantt
+                </a>
+              </li>
+              <li className="leading-loose">
+                <a className="text-gray-400 no-underline" href="#!">
+                  OTS
+                </a>
+              </li>
+              <li className="leading-loose">
+                <a className="text-gray-400 no-underline" href="#!">
+                  College Town
                 </a>
               </li>
             </ul>
@@ -77,85 +76,17 @@ function Footer() {
             <ul className="list-none mb-4 lg:mb-0">
               <li className="leading-loose">
                 <a className="text-gray-400 no-underline" href="#!">
-                  New York City
+                  Muhammad Nagar
                 </a>
               </li>
               <li className="leading-loose">
                 <a className="text-gray-400 no-underline" href="#!">
-                  Orange County
+                  Spring Velly
                 </a>
               </li>
               <li className="leading-loose">
                 <a className="text-gray-400 no-underline" href="#!">
-                  Atlanta
-                </a>
-              </li>
-              <li className="leading-loose">
-                <a className="text-gray-400 no-underline" href="#!">
-                  Charlotte
-                </a>
-              </li>
-              <li className="leading-loose">
-                <a className="text-gray-400 no-underline" href="#!">
-                  Denver
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="col-6 col-md-4 col-lg-auto mb-3">
-            <ul className="list-none mb-4 lg:mb-0">
-              <li className="leading-loose">
-                <a className="text-gray-400 no-underline" href="#!">
-                  Chicago
-                </a>
-              </li>
-              <li className="leading-loose">
-                <a className="text-gray-400 no-underline" href="#!">
-                  Phoenix
-                </a>
-              </li>
-              <li className="leading-loose">
-                <a className="text-gray-400 no-underline" href="#!">
-                  Las Vegas
-                </a>
-              </li>
-              <li className="leading-loose">
-                <a className="text-gray-400 no-underline" href="#!">
-                  Sacramento
-                </a>
-              </li>
-              <li className="leading-loose">
-                <a className="text-gray-400 no-underline" href="#!">
-                  Oklahoma City
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="col-6 col-md-4 col-lg-auto mb-3">
-            <ul className="list-none mb-4 lg:mb-0">
-              <li className="leading-loose">
-                <a className="text-gray-400 no-underline" href="#!">
-                  Columbus
-                </a>
-              </li>
-              <li className="leading-loose">
-                <a className="text-gray-400 no-underline" href="#!">
-                  New Mexico
-                </a>
-              </li>
-              <li className="leading-loose">
-                <a className="text-gray-400 no-underline" href="#!">
-                  Albuquerque
-                </a>
-              </li>
-              <li className="leading-loose">
-                <a className="text-gray-400 no-underline" href="#!">
-                  Sacramento
-                </a>
-              </li>
-              <li className="leading-loose">
-                <a className="text-gray-400 no-underline" href="#!">
-                  New Orleans
+                  KDA Gate 2
                 </a>
               </li>
             </ul>

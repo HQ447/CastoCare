@@ -5,22 +5,6 @@
   background-color: red !important;
 }
 
-.image-slider {
-  width: 60%;
-  height: 600px;
-  background-image: url("../../assets/bike.jpg");
-  background-size: 100% 100%;
-  animation: changeImage 6s linear infinite;
-}
-@keyframes changeImage {
-  0% {
-    background-image: url("../../assets/bike.jpg");
-  }
-  100% {
-    background-image: url("../../assets/main.jpg");
-  }
-}
-
 .sec-3-bg {
   background-color: #fffbf4 !important;
 }
@@ -32,6 +16,51 @@
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
+
+.head-1 {
+  animation-name: one;
+  animation-duration: 1s; /* Changed to 12s to synchronize with the second animation */
+  animation-delay: 6s; /* Delay the start of the first h1 animation */
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.main-img {
+  animation-name: img;
+  animation-duration: 1s; /* Changed to 12s to synchronize with the second animation */
+  animation-delay: 6s; /* Delay the start of the first h1 animation */
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes one {
+  0% {
+    top: 0px; /* Start at original position */
+  }
+  20% {
+    transform: translateY(6px) scale(1.01);
+    /* Move upward */
+  }
+
+  100% {
+    transform: translateY(0); /* Move further upward */
+    transform: scale(1);
+  }
+}
+@keyframes img {
+  0% {
+    transform: 0px; /* Start at original position */
+  }
+  20% {
+    transform: translateY(-6px);
+    /* Move upward */
+  }
+
+  100% {
+    transform: translateY(0); /* Move further upward */
+  }
+}
+
 .lg-heading {
   font-size: 3rem;
   font-weight: 800;
