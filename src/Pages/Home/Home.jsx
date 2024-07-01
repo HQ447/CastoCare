@@ -4,6 +4,7 @@ import { MdDeliveryDining } from "react-icons/md";
 import { FaBagShopping } from "react-icons/fa6";
 import { useSelector } from "react-redux";
 
+import ReactWhatsapp from "react-whatsapp";
 // import { useState } from "react";
 
 function Home() {
@@ -16,6 +17,13 @@ function Home() {
 
   return (
     <div className="Home ">
+      <ReactWhatsapp number="+92 3498841513" message="How can I help you?">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"
+          alt=""
+          className=" w-16 fixed bottom-10 right-5 z-50"
+        />
+      </ReactWhatsapp>
       <div className="front-sec pt-20 h-screen -md:h-auto -md:pt-24 -md:pb-10 -md:gap-4 px-20 flex flex-wrap-reverse w-full -sm:px-10 -xsm:px-3">
         <div className="flex flex-col left w-full md:w-1/2 justify-center h-full">
           <h1 className="lg-heading text-white -md:text-center">
