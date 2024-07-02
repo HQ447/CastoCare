@@ -30,7 +30,7 @@ function Nav() {
         </h1>
       </div>
 
-      <button className="flex theme-color justify-center items-center -mmd:hidden  bg-white px-11 rounded-md py-2">
+      <button className="flex theme-color justify-center items-center -mmd:hidden  bg-white px-11 rounded-md py-2  hover:scale-95 transition-all">
         <FaUser className="" />
         &nbsp; Login
       </button>

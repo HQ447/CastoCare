@@ -16,7 +16,7 @@ function Home() {
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"
           alt=""
-          className=" w-16 fixed bottom-10 right-5 z-50 hover:rotate-45 hover:scale-105 transition-all"
+          className=" w-16 fixed bottom-10 right-5 z-50  hover:scale-110 transition-all"
         />
       </ReactWhatsapp>
       <div className="front-sec pt-20 h-screen -md:h-auto -md:pt-24 -md:pb-10 -md:gap-4 px-20 flex flex-wrap-reverse w-full -sm:px-10 -xsm:px-3">
@@ -50,7 +50,7 @@ function Home() {
                 />
               </div>
               <button
-                className="text-white font-bold p-3 rounded-md w-1/3 -mmd:w-2/5  -md:w-1/3"
+                className="text-white font-bold p-3 rounded-md w-1/3 -mmd:w-2/5  -md:w-1/3  hover:scale-95 transition-all"
                 style={{ backgroundColor: "#F17228" }}
               >
                 Find Food
@@ -109,10 +109,10 @@ function Home() {
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxxUNGrCbT0SCIlnn5VZknc-HCxy0WWG1wIA&s"
                     alt="..."
                   />
-                  <div className="absolute bottom-0 left-0 rounded-tr-3xl front-sec">
-                    <div className="bg-primary p-4 rounded-tr-3xl ">
-                      <div className="flex justify-between items-center">
-                        <div className="text-white text-4xl">30%</div>
+                  <div className="absolute bottom-0 left-0 rounded-tr-3xl front-sec ">
+                    <div className=" p-4 rounded-tr-3xl ">
+                      <div className="flex justify-between items-center ">
+                        <div className="text-white text-4xl ">30%</div>
                         <div className="text-white text-sm">
                           <div className="font-normal text-sm mt-2"> Off</div>
                         </div>
@@ -368,7 +368,10 @@ function Home() {
                         className="grid py-2 text-center rounded-md text-white font-bold mt-11"
                         style={{ backgroundColor: "#FFB30E" }}
                       >
-                        <a className="btn btn-lg btn-primary mt-xl-6" href="#!">
+                        <a
+                          className="btn btn-lg btn-primary mt-xl-6  hover:scale-95 transition-all"
+                          href="#!"
+                        >
                           PROCEED TO ORDER
                           <svg
                             className="w-4 h-4 ml-2 inline-block"
@@ -429,7 +432,10 @@ function Home() {
                         className="grid py-2 text-center rounded-md text-white font-bold mt-11"
                         style={{ backgroundColor: "#FFB30E" }}
                       >
-                        <a className="btn btn-lg btn-primary mt-xl-6" href="#!">
+                        <a
+                          className="btn btn-lg btn-primary mt-xl-6  hover:scale-95 transition-all"
+                          href="#!"
+                        >
                           PROCEED TO ORDER
                           <svg
                             className="w-4 h-4 ml-2 inline-block"
@@ -489,7 +495,10 @@ function Home() {
                         className="grid py-2 text-center rounded-md text-white font-bold mt-11"
                         style={{ backgroundColor: "#FFB30E" }}
                       >
-                        <a className="btn btn-lg btn-primary mt-xl-6" href="#!">
+                        <a
+                          className="btn btn-lg btn-primary mt-xl-6  hover:scale-95 transition-all"
+                          href="#!"
+                        >
                           PROCEED TO ORDER
                           <svg
                             className="w-4 h-4 ml-2 inline-block"
@@ -531,7 +540,7 @@ function Home() {
                 Are you ready to order <br /> with the best deals?
               </h1>
               <a
-                className="btn py-3 px-6 rounded-sm text-white font-bold "
+                className="btn py-3 px-6 rounded-sm text-white font-bold  hover:scale-95 transition-all "
                 href="#"
                 style={{ backgroundColor: "#f17228" }}
               >
