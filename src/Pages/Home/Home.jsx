@@ -248,7 +248,7 @@ function Home() {
                     />
                     <h5 className="mt-4 font-bold">Pay advanced</h5>
                     <p className="mb-md-0 text-gray-400">
-                      It's quick, safe, and simple. Select several methods of
+                      Its quick, safe, and simple. Select several methods of
                       payment
                     </p>
                   </div>
