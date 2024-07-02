@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 function Team() {
   const ourTeam = useSelector((state) => state.store.ourTeam);
   return (
-    <div className="px-20 py-32 min-h-screen text-justify  ">
+    <div className="px-20 py-32 min-h-screen text-justify -xsm:px-3  ">
       <h1 className="w-full text-center text-3xl font-bold mb-4">
         Meet Our Team
       </h1>
@@ -17,8 +17,8 @@ function Team() {
             />
             <h1 className="my-3 font-bold">Muhammad Talha</h1>
             <p className=" text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus iure exercitationem libero ipsam perspiciatis. Esse
+              Visionary leader and driving force behind the startup. Passionate
+              about innovation and dedicated to turning ideas into reality.
             </p>
             <h1
               style={{ backgroundColor: "#F17228" }}
@@ -35,8 +35,9 @@ function Team() {
             />
             <h1 className="my-3 font-bold">Obaid Afridi</h1>
             <p className=" text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus iure exercitationem libero ipsam perspiciatis. Esse
+              Strategic thinker and problem solver. Collaborates closely with
+              the founder to shape the company’s direction and ensures smooth
+              operations.
             </p>
             <h1
               style={{ backgroundColor: "#F17228" }}
@@ -57,10 +58,7 @@ function Team() {
                 className=" w-28 border-2 border-black border-solid rounded-full "
               />
               <h1 className="my-3 font-bold">{obj.name}</h1>
-              <p className=" text-justify">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus iure exercitationem libero ipsam perspiciatis. Esse
-              </p>
+              <p className="">{obj.des}</p>
               <h1
                 style={{ backgroundColor: "#F17228" }}
                 className="font-bold text-white text-lg my-2 w-full py-1 text-center rounded-md"

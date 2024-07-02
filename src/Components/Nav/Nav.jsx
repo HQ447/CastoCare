@@ -2,6 +2,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaUser } from "react-icons/fa";
 import "./Nav.css";
 import { NavLink } from "react-router-dom";
+import { IoIosMenu } from "react-icons/io";
 
 function Nav() {
   return (
@@ -33,6 +34,8 @@ function Nav() {
         <FaUser className="" />
         &nbsp; Login
       </button>
+
+      <IoIosMenu className="text-3xl md:hidden" />
     </div>
   );
 }

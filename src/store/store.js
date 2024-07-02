@@ -62,19 +62,19 @@ const initialState = {
   ourTeam: [
     {
       name: "Hammad Ahmad",
-      des: "loekr efjk iw sfijw fijws mfuwirkf viofjes bkj dvk",
+      des: "Expert in coding and web technologies. Builds and maintains the company’s online presence, ensuring a seamless user experience.",
       title: "Web Developer",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOH2aZnIHWjMQj2lQUOWIL2f4Hljgab0ecZQ&s",
     },
     {
       name: "Member 2",
-      des: "loekr efjk iw sfijw fijws mfuwirkf viofjes bkj dvk",
+      des: "Creative artist with a keen eye for design. Crafts visual content that communicates the brand’s message and engages the audience.",
       title: "Graphic Designer",
       img: "https://static.vecteezy.com/system/resources/previews/007/793/728/original/silhouette-drawing-of-muslim-woman-with-hijab-arab-woman-for-logo-template-icon-hijab-store-muslim-store-etc-free-vector.jpg",
     },
     {
       name: "Member 3",
-      des: "loekr efjk iw sfijw fijws mfuwirkf viofjes bkj dvk",
+      des: "Social media and marketing expert. Manages the company’s social media platforms, creating content to build a strong online community.",
       title: "Social Media Manager",
       img: "https://static.vecteezy.com/system/resources/previews/007/793/728/original/silhouette-drawing-of-muslim-woman-with-hijab-arab-woman-for-logo-template-icon-hijab-store-muslim-store-etc-free-vector.jpg",
     },

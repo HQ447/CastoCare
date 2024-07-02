@@ -21,7 +21,7 @@ function Home() {
       </ReactWhatsapp>
       <div className="front-sec pt-20 h-screen -md:h-auto -md:pt-24 -md:pb-10 -md:gap-4 px-20 flex flex-wrap-reverse w-full -sm:px-10 -xsm:px-3">
         <div className="flex flex-col left w-full md:w-1/2 justify-center h-full overflow-hidden ">
-          <div className=" w-full  h-20 ">
+          <div className=" w-full ">
             <h1 className="lg-heading text-white -md:text-center head-1">
               Are You Starving?
             </h1>
@@ -30,7 +30,7 @@ function Home() {
             Within a few clicks, find meals <br /> that are accessible near you
           </p>
           <div className="bg-white rounded-md p-4 my-3">
-            <div className="btn-box flex py-3">
+            <div className="btn-box flex py-3 -xsm:gap-1">
               <button className="DeliveryBtn flex gap-1 items-center text-gray-400 py-2 px-3 rounded-md hover:bg-orange-300">
                 <MdDeliveryDining className="text-3xl" />
                 <span>Delivery</span>
@@ -349,7 +349,7 @@ function Home() {
                         alt="..."
                       />
                     </div>
-                    <div className="w-full md:w-7/12 xl:w-5/12 2xl:w-4/12  p-10">
+                    <div className="w-full md:w-7/12 xl:w-5/12 2xl:w-4/12  p-10 -xsm:p-3">
                       <h1 className="card-title mt-xl-5 mb-4 text-4xl font-bold">
                         Best deals <br />
                         <span
@@ -410,7 +410,7 @@ function Home() {
                         alt="..."
                       />
                     </div>
-                    <div className="w-full md:w-7/12 xl:w-5/12 2xl:w-4/12 p-10">
+                    <div className="w-full md:w-7/12 xl:w-5/12 2xl:w-4/12 p-10 -xsm:p-3">
                       <h1 className="card-title mt-xl-5 mb-4 text-4xl font-bold">
                         Best deals <br />
                         <span
@@ -470,7 +470,7 @@ function Home() {
                         alt="..."
                       />
                     </div>
-                    <div className="w-full md:w-7/12 xl:w-5/12 2xl:w-4/12  p-10">
+                    <div className="w-full md:w-7/12 xl:w-5/12 2xl:w-4/12  p-10 -xsm:p-3">
                       <h1 className="card-title mt-xl-5 mb-4 text-4xl font-bold">
                         Best deals <br />
                         <span

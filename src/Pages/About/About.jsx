@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div className="px-20 py-32 min-h-screen text-justify -xsm:px-10 ">
+    <div className="px-20 py-32 min-h-screen text-justify -xsm:px-3 ">
       <h1 className="w-full text-center text-3xl font-bold mb-10">About Us</h1>
       <div className="flex flex-wrap-reverse w-full -sm:gap-10">
         <div className="px-2 w-full md:w-1/2 mb-6 md:mb-0">
@@ -16,7 +16,7 @@ function About() {
             to your doorstep, so you can spend more time enjoying your day.{" "}
           </p>
           <button
-            className="rounded-sm py-2 px-5 text-white font-bold mt-7 "
+            className="rounded-sm py-2 px-5 text-white font-bold mt-7 -xsm:w-full "
             style={{ backgroundColor: "#f17228" }}
           >
             Read More
