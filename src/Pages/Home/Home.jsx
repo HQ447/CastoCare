@@ -5,7 +5,7 @@ import { FaBagShopping } from "react-icons/fa6";
 import { useSelector } from "react-redux";
 import { FaStar } from "react-icons/fa";
 import ReactWhatsapp from "react-whatsapp";
-import main from "../../assets/main.png";
+import bike from "../../assets/bike.jpg";
 
 function Home() {
   const restArr = useSelector((state) => state.store.restArr);
@@ -59,7 +59,7 @@ function Home() {
           </div>
         </div>
         <div className=" image-slider right w-full md:w-1/2 flex justify-center items-center">
-          <img src={main} alt="img" className="main-img" />
+          <img src={bike} alt="img" className="main-img w-96" />
         </div>
       </div>
 

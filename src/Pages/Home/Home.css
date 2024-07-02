@@ -27,7 +27,7 @@
 
 .main-img {
   animation-name: img;
-  animation-duration: 1s; /* Changed to 12s to synchronize with the second animation */
+  animation-duration: 3s; /* Changed to 12s to synchronize with the second animation */
   animation-delay: 6s; /* Delay the start of the first h1 animation */
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -52,12 +52,12 @@
     transform: 0px; /* Start at original position */
   }
   20% {
-    transform: translateY(-6px);
+    transform: translateX(10px);
     /* Move upward */
   }
 
   100% {
-    transform: translateY(0); /* Move further upward */
+    transform: translateX(0); /* Move further upward */
   }
 }
 
