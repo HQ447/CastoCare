@@ -5,6 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
+import ReactWhatsapp from "react-whatsapp";
 
 function Footer() {
   return (
@@ -137,21 +138,38 @@ function Footer() {
                   Help & Support
                 </a>
               </li>
-              <li className="leading-loose">
-                <a className="text-gray-400 no-underline" href="#!">
-                  Partner with us
-                </a>
-              </li>
-              <li className="leading-loose">
-                <a className="text-gray-400 no-underline" href="#!">
-                  Ride with us
-                </a>
-              </li>
-              <li className="leading-loose">
-                <a className="text-gray-400 no-underline" href="#!">
-                  Ride with us
-                </a>
-              </li>
+              <ReactWhatsapp
+                number="+92 3336575249"
+                message="How can I help you?"
+              >
+                <li className="leading-loose">
+                  <a className="text-gray-400 no-underline" href="#!">
+                    Partner with us
+                  </a>
+                </li>
+              </ReactWhatsapp>
+              <br />
+              <ReactWhatsapp
+                number="+92 3336575249"
+                message="How can I help you?"
+              >
+                <li className="leading-loose">
+                  <a className="text-gray-400 no-underline" href="#!">
+                    Ride with us
+                  </a>
+                </li>
+              </ReactWhatsapp>
+              <br />
+              <ReactWhatsapp
+                number="+92 3336575249"
+                message="How can I help you?"
+              >
+                <li className="leading-loose">
+                  <a className="text-gray-400 no-underline" href="#!">
+                    Ride with us
+                  </a>
+                </li>
+              </ReactWhatsapp>
             </ul>
           </div>
           <div className="col-6 col-md-4 col-lg-3 col-xxl-2 mb-3">

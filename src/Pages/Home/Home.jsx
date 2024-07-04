@@ -9,10 +9,11 @@ import bike from "../../assets/bike.jpg";
 
 function Home() {
   const restArr = useSelector((state) => state.store.restArr);
+  const offer = "How can I help you?";
 
   return (
     <div className="Home ">
-      <ReactWhatsapp number="+92 3336575249" message="How can I help you?">
+      <ReactWhatsapp number="+92 3336575249" message={offer}>
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"
           alt=""
