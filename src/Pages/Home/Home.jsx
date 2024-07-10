@@ -7,6 +7,8 @@ import { FaStar } from "react-icons/fa";
 import ReactWhatsapp from "react-whatsapp";
 import bike from "../../assets/bike.jpg";
 
+import { NavLink } from "react-router-dom";
+
 function Home() {
   const restArr = useSelector((state) => state.store.restArr);
   const offer = "How can I help you?";
@@ -50,11 +52,12 @@ function Home() {
                   className="bg-transparent outline-none"
                 />
               </div>
+
               <button
                 className="text-white font-bold p-3 rounded-md w-1/3 -mmd:w-2/5  -md:w-1/3  hover:scale-95 transition-all"
                 style={{ backgroundColor: "#F17228" }}
               >
-                Find Food
+                <NavLink to={"/resturents"}>Find Food</NavLink>
               </button>
             </div>
           </div>
@@ -281,59 +284,64 @@ function Home() {
           </div>
         </div>
         <div className="container mx-auto  flex gap-2 flex-wrap justify-between">
-          {restArr.map((obj) => (
-            <div
-              key={obj.index}
-              className="col-sm-6 col-md-4 col-lg-3 h-full mb-5 w-60 shadow-md p-2 rounded-lg -mmd:w-80"
-            >
-              <div className="card text-white rounded-3 relative overflow-hidden ">
-                <img
-                  className="img-fluid rounded-3  w-full object-cover h-48 rounded-xl"
-                  src={obj.image}
-                  alt="..."
-                />
-                <div className="absolute inset-0 ps-0"></div>
-                <div className="card-body ps-0">
-                  <div className="flex items-center ">
-                    <img
-                      className="img-fluid"
-                      src="assets/img/gallery/food-world-logo.png"
-                      alt=""
-                    />
-                    <div className="flex my-3">
-                      <div className="logo rounded-full">
-                        <img
-                          src={obj.logo}
-                          alt="logo"
-                          className="rounded-full w-16"
-                        />
-                      </div>
-                      <div className=" flex flex-col justify-center ms-4">
-                        <h5 className="mb-0 font-bold text-gray-900 text-xl ">
-                          {obj.ResturentName}
-                        </h5>
-                        <span className="flex items-center gap-1">
-                          <FaStar className=" text-yellow-400 " />
-                          <FaStar className=" text-yellow-400 " />
-                          <FaStar className=" text-yellow-400 " />
-                          <FaStar className=" text-yellow-400 " />
-                          <p className="text-black ">{obj.rating}</p>
-                        </span>
+          {restArr
+            .filter((obj) => {
+              if (obj.feature == true) return obj;
+            })
+
+            .map((obj) => (
+              <div
+                key={obj.index}
+                className="col-sm-6 col-md-4 col-lg-3 h-full mb-5 w-60 shadow-md p-2 rounded-lg -mmd:w-80"
+              >
+                <div className="card text-white rounded-3 relative overflow-hidden ">
+                  <img
+                    className="img-fluid rounded-3  w-full object-cover h-48 rounded-xl"
+                    src={obj.image}
+                    alt="..."
+                  />
+                  <div className="absolute inset-0 ps-0"></div>
+                  <div className="card-body ps-0">
+                    <div className="flex items-center ">
+                      <img
+                        className="img-fluid"
+                        src="assets/img/gallery/food-world-logo.png"
+                        alt=""
+                      />
+                      <div className="flex my-3">
+                        <div className="logo rounded-full">
+                          <img
+                            src={obj.logo}
+                            alt="logo"
+                            className="rounded-full w-16"
+                          />
+                        </div>
+                        <div className=" flex flex-col justify-center ms-4">
+                          <h5 className="mb-0 font-bold text-gray-900 text-xl ">
+                            {obj.ResturentName}
+                          </h5>
+                          <span className="flex items-center gap-1">
+                            <FaStar className=" text-yellow-400 " />
+                            <FaStar className=" text-yellow-400 " />
+                            <FaStar className=" text-yellow-400 " />
+                            <FaStar className=" text-yellow-400 " />
+                            <p className="text-black ">{obj.rating}</p>
+                          </span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <span
-                    className="badge bg-green-100 px-2 py-1 rounded-md"
-                    style={{ backgroundColor: "#ffb30ed4" }}
-                  >
-                    <span className="font-bold text-lg  p-0 text-white">
-                      Opens Tomorrow
+                    <span
+                      className="badge bg-green-100 px-2 py-1 rounded-md"
+                      style={{ backgroundColor: "#ffb30ed4" }}
+                    >
+                      <span className="font-bold text-lg  p-0 text-white">
+                        Opens Tomorrow
+                      </span>
                     </span>
-                  </span>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
         </div>
       </section>
       <section className="pb-5 pt-8 px-20 -sm:px-10 -xsm:px-3">
