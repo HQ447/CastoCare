@@ -11,7 +11,6 @@ import { NavLink } from "react-router-dom";
 
 function Home() {
   const restArr = useSelector((state) => state.store.restArr);
-  const offer = "How can I help you?";
 
   const order = {
     name: "Order no1",
@@ -19,12 +18,11 @@ function Home() {
     price: 3434,
   };
 
+  const offer = `Order Name is ${order.name} , Order Description is :${order.des}, Order Price is :${order.price}`;
+
   return (
     <div className="Home ">
-      <ReactWhatsapp
-        number="+92 3336575249"
-        message={(order.name, order.des, order.price)}
-      >
+      <ReactWhatsapp number="+92 3336575249" message={offer}>
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"
           alt=""
