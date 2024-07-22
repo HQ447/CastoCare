@@ -13,12 +13,13 @@ function Home() {
   const restArr = useSelector((state) => state.store.restArr);
 
   const order = {
-    name: "Order no1",
+    CustName: "Hamza",
+    orderName: "Pizza",
     des: "My first order",
-    price: 3434,
+    price: 2400,
   };
 
-  const offer = `Order Name is ${order.name} , Order Description is :${order.des}, Order Price is :${order.price}`;
+  const offer = `Order Name is ${order.CustName} \nOrder Description is :${order.orderName}\nder Description :${order.des}\nrder Price is :${order.price}`;
 
   return (
     <div className="Home ">
