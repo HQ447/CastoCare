@@ -3,14 +3,18 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   restArr: [
     {
+      id: 1,
       ResturentName: "Crunch",
       image:
         "https://media-cdn.tripadvisor.com/media/photo-s/16/63/3b/30/comfortable-intimate.jpg",
       rating: "3.4",
       feature: true,
       logo: "https://i.pinimg.com/474x/59/5f/a5/595fa5ffb3d67f62ceabaa0d9a40d1e2.jpg",
+      description:
+        "Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.",
     },
     {
+      id: 2,
       ResturentName: "Munch ",
       rating: "3.4",
       feature: true,
@@ -19,6 +23,7 @@ const initialState = {
       logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY99sN0OpcWc84BuWGgzh_QqGQUBfMlAY64m-s2i1Huv6CSjsVppE9L6gFDaaAL-m1uZk&usqp=CAU",
     },
     {
+      id: 3,
       ResturentName: "Karachi Student Biryani",
       image:
         "https://thefoodengineeruae.wordpress.com/wp-content/uploads/2020/02/9d947338-62d5-4973-a258-78bda48c03d7.jpg?w=1024",
@@ -27,6 +32,7 @@ const initialState = {
       logo: "https://pbs.twimg.com/profile_images/1731238111433355264/nsrAwJE2_400x400.jpg",
     },
     {
+      id: 4,
       ResturentName: "Italian Pizza Kohat",
       rating: "3.4",
       feature: true,
@@ -35,6 +41,7 @@ const initialState = {
       logo: "https://static3.depositphotos.com/1000747/223/v/450/depositphotos_2231828-stock-illustration-pizza-chef.jpg",
     },
     {
+      id: 5,
       ResturentName: "Speen Ghar",
       rating: "3.4",
       feature: true,
@@ -43,6 +50,7 @@ const initialState = {
       logo: "https://png.pngtree.com/png-vector/20220708/ourmid/pngtree-fast-food-logo-png-image_5763171.png",
     },
     {
+      id: 6,
       ResturentName: "Khyber Shinwari",
       rating: "3.4",
       feature: true,
@@ -51,6 +59,7 @@ const initialState = {
       logo: "https://us.123rf.com/450wm/carrotstudios/carrotstudios2106/carrotstudios210600062/169968029-meat-bbq-clip-art-vector-illustration-on-white-background.jpg?ver=6",
     },
     {
+      id: 7,
       ResturentName: "P1P2",
       rating: "3.4",
       feature: true,
@@ -59,6 +68,7 @@ const initialState = {
       logo: "https://png.pngtree.com/png-clipart/20220628/original/pngtree-food-logo-png-image_8239850.png",
     },
     {
+      id: 8,
       ResturentName: "Broadway",
       rating: "4",
       image:
@@ -66,6 +76,7 @@ const initialState = {
       logo: "https://logowik.com/content/uploads/images/pizza1543.logowik.com.webp",
     },
     {
+      id: 9,
       ResturentName: "Broadway",
       rating: "4",
       feature: true,
@@ -74,6 +85,7 @@ const initialState = {
       logo: "https://logowik.com/content/uploads/images/pizza1543.logowik.com.webp",
     },
     {
+      id: 10,
       ResturentName: "Broadway",
       rating: "4",
       image:
@@ -81,6 +93,7 @@ const initialState = {
       logo: "https://logowik.com/content/uploads/images/pizza1543.logowik.com.webp",
     },
     {
+      id: 11,
       ResturentName: "Broadway",
       rating: "4",
       image:
@@ -108,7 +121,32 @@ const initialState = {
       img: "https://static.vecteezy.com/system/resources/previews/007/793/728/original/silhouette-drawing-of-muslim-woman-with-hijab-arab-woman-for-logo-template-icon-hijab-store-muslim-store-etc-free-vector.jpg",
     },
   ],
+  foodItems: [
+    {
+      shopID: 1,
+      itemName: "Pizza",
+      itemPrice: 2300,
+      quantity: 1,
+    },
+    {
+      shopID: 1,
+      itemName: "italian pizza",
+      itemPrice: 300,
+      quantity: 1,
+    },
+    {
+      shopID: 1,
+      itemName: "Sandwich",
+      itemPrice: 200,
+      quantity: 1,
+    },
+  ],
   searchData: {},
+  cart: [],
+  formData: {},
+  tempArr: [],
+  devliveryCharges: 3,
+  resID: 0,
 };
 
 export const store = createSlice({
@@ -121,9 +159,51 @@ export const store = createSlice({
     updateSearchData: (state, action) => {
       state.searchData = action.payload;
     },
+    addToCart: (state, action) => {
+      state.cart.push(action.payload);
+    },
+    removeFromCart: (state, action) => {
+      state.cart = state.cart.filter((item) => item.id !== action.payload);
+    },
+    updateCartItem: (state, action) => {
+      const index = state.cart.findIndex(
+        (item) => item.id === action.payload.id
+      );
+      if (index !== -1) {
+        state.cart[index] = action.payload;
+      }
+    },
+
+    updateFormData: (state, action) => {
+      state.formData = action.payload;
+    },
+
+    addToTempArr: (state, action) => {
+      state.tempArr.push(action.payload);
+    },
+    clearTempArr: (state) => {
+      state.tempArr = [];
+    },
+    updateDeliveryCharges: (state, action) => {
+      state.devliveryCharges = action.payload;
+    },
+    updateResID: (state, action) => {
+      state.resID = action.payload;
+    },
   },
 });
 
-export const { addtoData, updateSearchData } = store.actions;
+export const {
+  addtoData,
+  updateSearchData,
+  addToCart,
+  removeFromCart,
+  updateCartItem,
+  updateFormData,
+  addToTempArr,
+  updateResID,
+  clearTempArr,
+  updateDeliveryCharges,
+} = store.actions;
 
 export default store.reducer;

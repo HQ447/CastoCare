@@ -1,9 +1,27 @@
 import "./resturent.css";
 import { useSelector } from "react-redux";
 import { FaStar } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+
+import { useDispatch } from "react-redux";
+import { addToTempArr, clearTempArr, updateResID } from "../../store/store";
 
 function Resturent() {
   const restArr = useSelector((state) => state.store.restArr);
+
+  // const tempArr = useSelector((state) => state.store.tempArr);
+  const navigate = useNavigate(); // Initialize useNavigate
+  const dispatch = useDispatch();
+
+  function handleClick(obj) {
+    dispatch(clearTempArr());
+
+    dispatch(addToTempArr(obj));
+    dispatch(updateResID(obj.id));
+
+    navigate("/product");
+  }
+
   return (
     <div className=" pt-16 px-20">
       <h1 className=" text-3xl w-full text-center font-bold py-7">
@@ -14,6 +32,7 @@ function Resturent() {
           <div
             key={obj.index}
             className="col-sm-6 col-md-4 col-lg-3 h-full mb-5 w-60 shadow-md p-2 rounded-lg -mmd:w-80"
+            onClick={() => handleClick(obj)}
           >
             <div className="card text-white rounded-3 relative overflow-hidden ">
               <img
