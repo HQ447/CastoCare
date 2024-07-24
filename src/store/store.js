@@ -18,6 +18,9 @@ const initialState = {
       ResturentName: "Munch ",
       rating: "3.4",
       feature: true,
+      description:
+        "Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.",
+
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFo3aujdUwouhcIXWqB0_eqIhEvdwylsqu3A&s",
       logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY99sN0OpcWc84BuWGgzh_QqGQUBfMlAY64m-s2i1Huv6CSjsVppE9L6gFDaaAL-m1uZk&usqp=CAU",
@@ -25,6 +28,9 @@ const initialState = {
     {
       id: 3,
       ResturentName: "Karachi Student Biryani",
+      description:
+        "Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.",
+
       image:
         "https://thefoodengineeruae.wordpress.com/wp-content/uploads/2020/02/9d947338-62d5-4973-a258-78bda48c03d7.jpg?w=1024",
       rating: "3.4",
@@ -34,6 +40,9 @@ const initialState = {
     {
       id: 4,
       ResturentName: "Italian Pizza Kohat",
+      description:
+        "Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.",
+
       rating: "3.4",
       feature: true,
       image:
@@ -43,6 +52,9 @@ const initialState = {
     {
       id: 5,
       ResturentName: "Speen Ghar",
+      description:
+        "Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.",
+
       rating: "3.4",
       feature: true,
       image:
@@ -52,6 +64,9 @@ const initialState = {
     {
       id: 6,
       ResturentName: "Khyber Shinwari",
+      description:
+        "Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.",
+
       rating: "3.4",
       feature: true,
       image:
@@ -62,6 +77,9 @@ const initialState = {
       id: 7,
       ResturentName: "P1P2",
       rating: "3.4",
+      description:
+        "Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.",
+
       feature: true,
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJYS8Uq0H0_3E9yPpg8jT2Gp4De8j9vmoNbQ&s",
@@ -70,6 +88,9 @@ const initialState = {
     {
       id: 8,
       ResturentName: "Broadway",
+      description:
+        "Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.",
+
       rating: "4",
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkDE1mnAf97fxEceR4qNi268bSVY43zEcFRg&s",
@@ -78,6 +99,9 @@ const initialState = {
     {
       id: 9,
       ResturentName: "Broadway",
+      description:
+        "Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.",
+
       rating: "4",
       feature: true,
       image:
@@ -88,6 +112,9 @@ const initialState = {
       id: 10,
       ResturentName: "Broadway",
       rating: "4",
+      description:
+        "Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.",
+
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkDE1mnAf97fxEceR4qNi268bSVY43zEcFRg&s",
       logo: "https://logowik.com/content/uploads/images/pizza1543.logowik.com.webp",
@@ -96,6 +123,9 @@ const initialState = {
       id: 11,
       ResturentName: "Broadway",
       rating: "4",
+      description:
+        "Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.",
+
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkDE1mnAf97fxEceR4qNi268bSVY43zEcFRg&s",
       logo: "https://logowik.com/content/uploads/images/pizza1543.logowik.com.webp",
@@ -124,21 +154,27 @@ const initialState = {
   foodItems: [
     {
       shopID: 1,
-      itemName: "Pizza",
+      itemName: "Avocado Sandwich",
       itemPrice: 2300,
       quantity: 1,
+      des: "The top choice amoung our customers and a part of amazinng breakfast.",
+      img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
     },
     {
       shopID: 1,
       itemName: "italian pizza",
       itemPrice: 300,
       quantity: 1,
+      des: "The top choice amoung our customers and a part of amazinng breakfast.",
+      img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
     },
     {
       shopID: 1,
       itemName: "Sandwich",
       itemPrice: 200,
       quantity: 1,
+      des: "The top choice amoung our customers and a part of amazinng breakfast.",
+      img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
     },
   ],
   searchData: {},

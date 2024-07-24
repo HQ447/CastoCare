@@ -1,10 +1,23 @@
 import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../store/store";
 
+import { useNavigate } from "react-router-dom";
 function Product() {
   const tempArr = useSelector((state) => state.store.tempArr);
+  const cart = useSelector((state) => state.store.cart);
   const foodItems = useSelector((state) => state.store.foodItems);
-
+  const dispatch = useDispatch();
   const resID = useSelector((state) => state.store.resID);
+  const navigate = useNavigate();
+
+  function handleClick(obj) {
+    if (cart.indexOf(obj) !== -1) return;
+    else {
+      dispatch(addToCart(obj));
+    }
+    navigate("/cart");
+  }
 
   return (
     <div className="pt-16 px-20">
@@ -25,8 +38,8 @@ function Product() {
           </div>
         ))}
       </div>
-      <div className=" w-full bg-red-300 flex flex-col">
-        <h1 className=" font-bold text-2xl w-full text-center">Menu</h1>
+      <div className=" w-full  rounded-xl flex flex-col px-2 my-4 py-5">
+        <h1 className=" font-bold text-2xl w-full text-center mb-2">Menu</h1>
         <div className="flex gap-2">
           {foodItems
             .filter((obj) => {
@@ -36,11 +49,32 @@ function Product() {
             })
 
             .map((obj) => (
-              <div key={obj.index}>
-                <h1>{obj.shopID}</h1>
-                <h1>{obj.itemName}</h1>
-                <h1>{obj.itemPrice}</h1>
-                <h1>{obj.quantity}</h1>
+              <div
+                key={obj.index}
+                className="  p-4 w-60 rounded-3xl shadow-md shadow-[#8d6962] bg-white "
+              >
+                <img
+                  src={obj.img}
+                  alt="loading error"
+                  className=" w-full rounded-md"
+                />
+                <div className="flex">
+                  <span className=" rounded-full  px-2 border-2 text-sm bg-[#dddfa4]">
+                    #custocare
+                  </span>
+                </div>
+                <h1 className=" text-lg font-bold">{obj.itemName}</h1>
+                <p className=" text-sm my-1">{obj.des}</p>
+
+                <div className="flex justify-between items-center mt-3">
+                  <h1 className=" font-bold">RS {obj.itemPrice}</h1>
+                  <button
+                    className=" bg-[#ff5900] text-white rounded-lg  py-1 px-2  hover:scale-95 transition-all"
+                    onClick={() => handleClick(obj)}
+                  >
+                    Add to Cart
+                  </button>
+                </div>
               </div>
             ))}
         </div>
