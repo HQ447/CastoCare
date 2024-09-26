@@ -61,12 +61,14 @@ function Home() {
                 />
               </div>
 
-              <button
-                className="text-white font-bold p-3 rounded-md w-1/3 -mmd:w-2/5  -md:w-1/3  hover:scale-95 transition-all"
-                style={{ backgroundColor: "#F17228" }}
-              >
-                <NavLink to={"/resturents"}>Find Food</NavLink>
-              </button>
+              <NavLink to={"/resturents"}>
+                <button
+                  className="text-white font-bold p-3 rounded-md   hover:scale-95 transition-all"
+                  style={{ backgroundColor: "#F17228" }}
+                >
+                  Find Food
+                </button>
+              </NavLink>
             </div>
           </div>
         </div>

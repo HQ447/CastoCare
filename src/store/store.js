@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   restArr: [
     {
-      id: 1,
+      id: "11",
       ResturentName: "Crunch",
       image:
         "https://media-cdn.tripadvisor.com/media/photo-s/16/63/3b/30/comfortable-intimate.jpg",
@@ -153,15 +153,17 @@ const initialState = {
   ],
   foodItems: [
     {
-      shopID: 1,
+      itemID: 1,
+      shopID: "11",
       itemName: "Avocado Sandwich",
-      itemPrice: 2300,
+      itemPrice: 300,
       quantity: 1,
       des: "The top choice amoung our customers and a part of amazinng breakfast.",
       img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
     },
     {
-      shopID: 1,
+      itemID: 2,
+      shopID: "11",
       itemName: "italian pizza",
       itemPrice: 300,
       quantity: 1,
@@ -169,7 +171,8 @@ const initialState = {
       img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
     },
     {
-      shopID: 1,
+      itemID: 3,
+      shopID: "11",
       itemName: "Sandwich",
       itemPrice: 200,
       quantity: 1,
@@ -181,7 +184,7 @@ const initialState = {
   cart: [],
   formData: {},
   tempArr: [],
-  devliveryCharges: 3,
+  devliveryCharges: 0,
   resID: 0,
 };
 
@@ -199,11 +202,11 @@ export const store = createSlice({
       state.cart.push(action.payload);
     },
     removeFromCart: (state, action) => {
-      state.cart = state.cart.filter((item) => item.id !== action.payload);
+      state.cart = state.cart.filter((item) => item.itemID !== action.payload);
     },
     updateCartItem: (state, action) => {
       const index = state.cart.findIndex(
-        (item) => item.id === action.payload.id
+        (item) => item.itemID === action.payload.itemID
       );
       if (index !== -1) {
         state.cart[index] = action.payload;
@@ -217,12 +220,15 @@ export const store = createSlice({
     addToTempArr: (state, action) => {
       state.tempArr.push(action.payload);
     },
+
     clearTempArr: (state) => {
       state.tempArr = [];
     },
+
     updateDeliveryCharges: (state, action) => {
       state.devliveryCharges = action.payload;
     },
+
     updateResID: (state, action) => {
       state.resID = action.payload;
     },

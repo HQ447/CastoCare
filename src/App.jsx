@@ -8,6 +8,8 @@ import Team from "./Pages/Team/Team";
 import Resturent from "./Pages/Resturent/Resturent";
 import Product from "./Pages/Product/Product";
 import Cart from "./Pages/cart/Cart";
+import Checkout from "./Pages/checkout/Checkout";
+import Invoice from "./invoice/Invoice";
 
 function App() {
   return (
@@ -25,6 +27,9 @@ function App() {
         <Route path="/resturents" element={<Resturent />} />
         <Route path="/product" element={<Product />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/invoice" element={<Invoice />} />
+
         <Route />
       </Routes>
 

@@ -1,39 +1,42 @@
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
+import { FaStar } from "react-icons/fa";
 import { addToCart } from "../../store/store";
 
-import { useNavigate } from "react-router-dom";
 function Product() {
   const tempArr = useSelector((state) => state.store.tempArr);
   const cart = useSelector((state) => state.store.cart);
   const foodItems = useSelector((state) => state.store.foodItems);
   const dispatch = useDispatch();
   const resID = useSelector((state) => state.store.resID);
-  const navigate = useNavigate();
 
   function handleClick(obj) {
     if (cart.indexOf(obj) !== -1) return;
     else {
       dispatch(addToCart(obj));
     }
-    navigate("/cart");
   }
 
   return (
     <div className="pt-16 px-20">
       <div className=" my-7">
         {tempArr.map((obj) => (
-          <div key={obj.index} className=" flex ">
+          <div key={obj.id} className=" flex ">
             <div className=" w-2/6 flex  items-center  ">
               <img src={obj.image} alt="" className=" w-3/4 rounded-lg" />
             </div>
             <div className=" w-2/3">
               <h2 className=" text-3xl font-bold">{obj.ResturentName}</h2>
               <p className=" my-3">{obj.description}</p>
-              <p className=" text-xl">
-                <b>Ratings</b> {obj.rating}
+              <p className=" text-xl flex items-center gap-3">
+                <b>Ratings</b>
+                <span className="flex">
+                  <FaStar className="text-yellow-400 " />
+                  <FaStar className="text-yellow-400 " />
+                  <FaStar className="text-yellow-400 " />
+                </span>
+                {obj.rating}
               </p>
-              <p>{resID}</p>
             </div>
           </div>
         ))}
