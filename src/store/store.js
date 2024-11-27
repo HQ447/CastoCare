@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   restArr: [
     {
-      id: "11",
+      id: "1",
       ResturentName: "Crunch",
       image:
         "https://media-cdn.tripadvisor.com/media/photo-s/16/63/3b/30/comfortable-intimate.jpg",
@@ -12,6 +12,35 @@ const initialState = {
       logo: "https://i.pinimg.com/474x/59/5f/a5/595fa5ffb3d67f62ceabaa0d9a40d1e2.jpg",
       description:
         "Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.Delicious crunch meals with a variety of flavors. Delicious crunch meals with a variety of flavors.",
+      foodItems: [
+        {
+          itemID: 1,
+          shopID: "11",
+          itemName: "Avocado Sandwich",
+          itemPrice: 300,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+        {
+          itemID: 2,
+          shopID: "11",
+          itemName: "italian pizza",
+          itemPrice: 300,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+        {
+          itemID: 3,
+          shopID: "11",
+          itemName: "Sandwich",
+          itemPrice: 200,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+      ],
     },
     {
       id: 2,
@@ -24,6 +53,35 @@ const initialState = {
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFo3aujdUwouhcIXWqB0_eqIhEvdwylsqu3A&s",
       logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY99sN0OpcWc84BuWGgzh_QqGQUBfMlAY64m-s2i1Huv6CSjsVppE9L6gFDaaAL-m1uZk&usqp=CAU",
+      foodItems: [
+        {
+          itemID: 1,
+          shopID: "11",
+          itemName: "Avocado Sandwich",
+          itemPrice: 300,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+        {
+          itemID: 2,
+          shopID: "11",
+          itemName: "italian pizza",
+          itemPrice: 300,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+        {
+          itemID: 3,
+          shopID: "11",
+          itemName: "Sandwich",
+          itemPrice: 200,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+      ],
     },
     {
       id: 3,
@@ -36,6 +94,35 @@ const initialState = {
       rating: "3.4",
       feature: true,
       logo: "https://pbs.twimg.com/profile_images/1731238111433355264/nsrAwJE2_400x400.jpg",
+      foodItems: [
+        {
+          itemID: 1,
+          shopID: "11",
+          itemName: "Avocado Sandwich",
+          itemPrice: 300,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+        {
+          itemID: 2,
+          shopID: "11",
+          itemName: "italian pizza",
+          itemPrice: 300,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+        {
+          itemID: 3,
+          shopID: "11",
+          itemName: "Sandwich",
+          itemPrice: 200,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+      ],
     },
     {
       id: 4,
@@ -48,6 +135,35 @@ const initialState = {
       image:
         "https://i.pinimg.com/736x/ea/03/60/ea0360e75c93603bfa9c4cb09a34943f.jpg",
       logo: "https://static3.depositphotos.com/1000747/223/v/450/depositphotos_2231828-stock-illustration-pizza-chef.jpg",
+      foodItems: [
+        {
+          itemID: 1,
+          shopID: "11",
+          itemName: "Avocado Sandwich",
+          itemPrice: 300,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+        {
+          itemID: 2,
+          shopID: "11",
+          itemName: "italian pizza",
+          itemPrice: 300,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+        {
+          itemID: 3,
+          shopID: "11",
+          itemName: "Sandwich",
+          itemPrice: 200,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+      ],
     },
     {
       id: 5,
@@ -60,6 +176,35 @@ const initialState = {
       image:
         "https://media-cdn.tripadvisor.com/media/photo-s/2b/a9/b8/c9/caption.jpg",
       logo: "https://png.pngtree.com/png-vector/20220708/ourmid/pngtree-fast-food-logo-png-image_5763171.png",
+      foodItems: [
+        {
+          itemID: 1,
+          shopID: "11",
+          itemName: "Avocado Sandwich",
+          itemPrice: 300,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+        {
+          itemID: 2,
+          shopID: "11",
+          itemName: "italian pizza",
+          itemPrice: 300,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+        {
+          itemID: 3,
+          shopID: "11",
+          itemName: "Sandwich",
+          itemPrice: 200,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+      ],
     },
     {
       id: 6,
@@ -72,6 +217,35 @@ const initialState = {
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGxCI2ShPRSAjA2yLzmbfQFuCITVceF4UThA&shttps://5.imimg.com/data5/SELLER/Default/2021/12/QP/KN/HN/51665645/dhaba-style-hotel-restaurant-interior-design-500x500.jpghttps://5.imimg.com/data5/SELLER/Default/2021/12/QP/KN/HN/51665645/dhaba-style-hotel-restaurant-interior-design-500x500.jpghttps://5.imimg.com/data5/SELLER/Default/2021/12/QP/KN/HN/51665645/dhaba-style-hotel-restaurant-interior-design-500x500.jpg",
       logo: "https://us.123rf.com/450wm/carrotstudios/carrotstudios2106/carrotstudios210600062/169968029-meat-bbq-clip-art-vector-illustration-on-white-background.jpg?ver=6",
+      foodItems: [
+        {
+          itemID: 1,
+          shopID: "11",
+          itemName: "Avocado Sandwich",
+          itemPrice: 300,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+        {
+          itemID: 2,
+          shopID: "11",
+          itemName: "italian pizza",
+          itemPrice: 300,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+        {
+          itemID: 3,
+          shopID: "11",
+          itemName: "Sandwich",
+          itemPrice: 200,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+      ],
     },
     {
       id: 7,
@@ -84,6 +258,35 @@ const initialState = {
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJYS8Uq0H0_3E9yPpg8jT2Gp4De8j9vmoNbQ&s",
       logo: "https://png.pngtree.com/png-clipart/20220628/original/pngtree-food-logo-png-image_8239850.png",
+      foodItems: [
+        {
+          itemID: 1,
+          shopID: "11",
+          itemName: "Avocado Sandwich",
+          itemPrice: 300,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+        {
+          itemID: 2,
+          shopID: "11",
+          itemName: "italian pizza",
+          itemPrice: 300,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+        {
+          itemID: 3,
+          shopID: "11",
+          itemName: "Sandwich",
+          itemPrice: 200,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+      ],
     },
     {
       id: 8,
@@ -95,6 +298,35 @@ const initialState = {
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkDE1mnAf97fxEceR4qNi268bSVY43zEcFRg&s",
       logo: "https://logowik.com/content/uploads/images/pizza1543.logowik.com.webp",
+      foodItems: [
+        {
+          itemID: 1,
+          shopID: "11",
+          itemName: "Avocado Sandwich",
+          itemPrice: 300,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+        {
+          itemID: 2,
+          shopID: "11",
+          itemName: "italian pizza",
+          itemPrice: 300,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+        {
+          itemID: 3,
+          shopID: "11",
+          itemName: "Sandwich",
+          itemPrice: 200,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+      ],
     },
     {
       id: 9,
@@ -107,6 +339,35 @@ const initialState = {
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkDE1mnAf97fxEceR4qNi268bSVY43zEcFRg&s",
       logo: "https://logowik.com/content/uploads/images/pizza1543.logowik.com.webp",
+      foodItems: [
+        {
+          itemID: 1,
+          shopID: "11",
+          itemName: "Avocado Sandwich",
+          itemPrice: 300,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+        {
+          itemID: 2,
+          shopID: "11",
+          itemName: "italian pizza",
+          itemPrice: 300,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+        {
+          itemID: 3,
+          shopID: "11",
+          itemName: "Sandwich",
+          itemPrice: 200,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+      ],
     },
     {
       id: 10,
@@ -118,6 +379,35 @@ const initialState = {
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkDE1mnAf97fxEceR4qNi268bSVY43zEcFRg&s",
       logo: "https://logowik.com/content/uploads/images/pizza1543.logowik.com.webp",
+      foodItems: [
+        {
+          itemID: 1,
+          shopID: "11",
+          itemName: "Avocado Sandwich",
+          itemPrice: 300,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+        {
+          itemID: 2,
+          shopID: "11",
+          itemName: "italian pizza",
+          itemPrice: 300,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+        {
+          itemID: 3,
+          shopID: "11",
+          itemName: "Sandwich",
+          itemPrice: 200,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+      ],
     },
     {
       id: 11,
@@ -129,6 +419,35 @@ const initialState = {
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkDE1mnAf97fxEceR4qNi268bSVY43zEcFRg&s",
       logo: "https://logowik.com/content/uploads/images/pizza1543.logowik.com.webp",
+      foodItems: [
+        {
+          itemID: 1,
+          shopID: "11",
+          itemName: "Avocado Sandwich",
+          itemPrice: 300,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+        {
+          itemID: 2,
+          shopID: "11",
+          itemName: "italian pizza",
+          itemPrice: 300,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+        {
+          itemID: 3,
+          shopID: "11",
+          itemName: "Sandwich",
+          itemPrice: 200,
+          quantity: 1,
+          des: "The top choice amoung our customers and a part of amazinng breakfast.",
+          img: "https://static.vecteezy.com/system/resources/previews/026/723/980/large_2x/foodgraphy-of-pizza-isolated-on-white-background-generative-ai-photo.jpg",
+        },
+      ],
     },
   ],
   ourTeam: [

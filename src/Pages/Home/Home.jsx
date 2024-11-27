@@ -6,24 +6,15 @@ import { useSelector } from "react-redux";
 import { FaStar } from "react-icons/fa";
 import ReactWhatsapp from "react-whatsapp";
 import bike from "../../assets/bike.jpg";
-
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 function Home() {
   const restArr = useSelector((state) => state.store.restArr);
-
-  const order = {
-    CustName: "Hamza",
-    orderName: "Pizza",
-    des: "My first order",
-    price: 2400,
-  };
-
-  const offer = `Order Name is ${order.CustName} \nOrder Description is :${order.orderName}\nder Description :${order.des}\nrder Price is :${order.price}`;
+  const navigate = useNavigate();
 
   return (
     <div className="Home ">
-      <ReactWhatsapp number="+92 3336575249" message={offer}>
+      <ReactWhatsapp number="+92 1234567890" message={`Hi`}>
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"
           alt=""
@@ -303,6 +294,7 @@ function Home() {
               <div
                 key={obj.index}
                 className="col-sm-6 col-md-4 col-lg-3 h-full mb-5 w-60 shadow-md p-2 rounded-lg -mmd:w-80"
+                onClick={() => navigate(`/product/${obj.id}`)}
               >
                 <div className="card text-white rounded-3 relative overflow-hidden ">
                   <img
